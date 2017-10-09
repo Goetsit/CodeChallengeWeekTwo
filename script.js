@@ -37,11 +37,15 @@ function newButtons(){
 }
 
 function colors(){
-  console.log('my buttons hate me');
 
-}
+
+  if($(this).parent().css('background-color','red')){
+    $(this).parent().css('background-color','yellow');
+  } else ($(this).parent().css('background-color','red'));
+
+} . //toggles to yellow, doesn't seem to toggle back to red
 
 function deleteButton(){
 
-  $(this).parent().remove();
+  $(this).parent().remove(); //removes div
 }
