@@ -24,7 +24,7 @@ function counter(){
   var count = $(this).data("count") || 0;
   $(this).data("count", ++count);
 
-  $('.codeChall').parent().append('<h2>'+count+'</h2>');
+  $('.codeChall').parent().append('<p>'+count+'<p>');
 
 }//counts up
 
@@ -43,6 +43,5 @@ function colors(){
 
 function deleteButton(){
 
-console.log('button delete');
-  //$(this).parent().parent().remove();
+  $(this).parent().remove();
 }
